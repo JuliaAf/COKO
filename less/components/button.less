@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 140px;
+  padding: 14px 0 12px;
+
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fad46b;
+  border-radius: 5px 4px 4px 5px;
+  box-shadow: 0 5px 0 #f3bc65;
+
+  transition: 0.3s;
+  &--red {
+    background-color: #f06060;
+    box-shadow: 0 5px 0 #c54258;
+  }
+  &--green {
+    background-color: #6fc598;
+    box-shadow: 0 5px 0 #5aa87f;
+  }
+  &--purple {
+    background-color: #a88cd5;
+    box-shadow: 0 5px 0 #9175bd;
+  }
+  &--pink {
+    background-color: #ea969f;
+    box-shadow: 0 5px 0 #cf6e79;
+  }
+  &:hover {
+    color: rgba(255,255,255,0.6);
+  }
+}

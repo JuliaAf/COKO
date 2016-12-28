@@ -1,0 +1,71 @@
+.types {
+  padding: 120px 0 90px 0;
+
+  text-align: center;
+
+  background-color: #fefffe;
+  & h2 {
+    margin-bottom: 80px;
+  }
+  & h3 {
+    margin-bottom: 35px;
+  }
+  &__list {
+    margin-bottom: 50px;
+  }
+  & tr {
+    border-bottom: 2px solid #ffffff;
+  }
+  & td {
+    padding: 30px 15px;
+
+    font-size: 14px;
+
+    background-color: #ece8f1;
+  }
+  & thead tr td {
+    padding: 30px 0;
+
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #a88cd5;
+  }
+  & tr td:last-child {
+    background-color: #e4f2ea;
+  }
+  & thead tr td:last-child {
+    background-color: #61d193;
+  }
+  & thead tr td:first-child {
+    border-top-left-radius: 10px;
+  }
+  & thead tr td:last-child {
+    border-top-right-radius: 10px;
+  }
+  & tbody tr:nth-child(2) td,
+  & tbody tr:nth-child(3) td {
+    position: relative;
+    z-index: 2;
+  }
+  & tbody tr:nth-child(2) td::before,
+  & tbody tr:nth-child(3) td::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    z-index: -1;
+
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    background: url(../img/circle-green.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  & tbody tr:nth-child(3) td::before {
+    background: url(../img/circle-red.png);
+  }
+}

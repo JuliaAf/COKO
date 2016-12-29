@@ -12,6 +12,26 @@
   }
   &__list {
     margin-bottom: 50px;
+    overflow-x: scroll;
+  }
+  &__container {
+    position: relative;
+  }
+  &__container::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #ece8f1;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  & table {
+    width: 1140px;
   }
   & tr {
     border-bottom: 2px solid #ffffff;
@@ -67,5 +87,10 @@
   }
   & tbody tr:nth-child(3) td::before {
     background: url(../img/circle-red.png);
+  }
+}
+@media @sm {
+  .types {
+    padding: 60px 0;
   }
 }

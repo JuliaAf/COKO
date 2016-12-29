@@ -9,6 +9,18 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__compare-girls img,
+  &__compare-boys img {
+    max-width: 100%;
+  }
+  &__compare-girls h2,
+  &__compare-boys-img {
+    flex-basis: 40%;
+  }
+  &__compare-girls-img,
+  &__compare-buttons {
+    flex-basis: 50%;
+  }
   &__compare-boys {
     align-items: flex-end;
     padding-bottom: 55px;
@@ -18,8 +30,60 @@
   }
   &__compare-buttons {
     padding-bottom: 100px;
+
+    text-align: center;
     & .button--purple {
       margin-right: 50px;
+    }
+  }
+}
+@media @md {
+  .intro {
+    &__compare-girls h2 {
+      line-height: 34px;
+    }
+    &__compare-buttons {
+      & .button--purple {
+        margin-right: 15px;
+      }
+      & .button {
+        width: 110px;
+      }
+    }
+  }
+}
+@media @sm {
+  .intro {
+    padding: 30px 0;
+
+    &__compare-girls h2 {
+      line-height: 28px;
+    }
+    &__compare-buttons {
+      width: 100%;
+      padding-bottom: 0;
+      & .button {
+        width: 130px;
+      }
+    }
+    &__compare-boys-img {
+      margin-bottom: 50px;
+    }
+  }
+}
+@media @xs {
+  .intro {
+    &__compare-girls,
+    &__compare-boys {
+      flex-direction: column;
+
+      text-align: center;
+    }
+    &__compare-girls-img {
+      order: 1;
+    }
+    &__compare-girls h2 {
+      order: 2;
     }
   }
 }

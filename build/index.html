@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <title>COKO</title>
   <link rel="stylesheet" href="css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
     <div class="wrapper">
       <div class="header__logo">
-        <img src="img/logo.png" alt="">
+        <a href="#" class="scrollTop"><img src="img/logo.png" alt=""></a>
       </div>
       <ul class="header__nav">
         <li><a href="#">Исследования</a></li>
@@ -26,38 +30,43 @@
   <section class="intro">
     <div class="wrapper">
       <div class="intro__compare-girls">
-        <h2>Почему одни и те же диеты и образ жизни дают результат одним и не приносят результат другим?</h2>
-        <img src="img/intro-girls.png" alt="">
+        <h2 class="wow fadeInRight" data-wow-delay="0.3s">Почему одни и те же диеты и образ жизни дают результат одним и не приносят результат другим?</h2>
+        <div class="intro__compare-girls-img wow fadeInRight">
+          <img src="img/intro-girls.png" alt="">
+        </div>
       </div>
       <div class="intro__compare-boys">
-        <img src="img/intro-boys.png" alt="">
-        <div class="intro__compare-buttons">
-          <a href="#" class="button button--purple">Видео</a>
-          <a href="#" class="button button--green">Подробнее</a>
+        <div class="intro__compare-boys-img wow fadeInLeft">
+          <img src="img/intro-boys.png" alt="">
+        </div>
+        <div class="intro__compare-buttons wow fadeInLeft" data-wow-delay="0.3s">
+          <a href="#video" rel="nofollow" class="button button--purple modal">Видео</a>
+          <a href="#facts" class="button button--green">Подробнее</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="facts">
+  <section class="facts" id="facts">
     <div class="wrapper">
       <p>исследования стенфордского университета показали, что люди могут по-разному реагировать на одни и те же продукты и нагрузки в зависимости от генетических особенностей</p>
       <div class="facts__ref">
-        <div class="facts__ref-img">
+        <div class="facts__ref-img wow fadeInRight">
           <img src="img/facts.png" alt="">
         </div>
-        <div class="facts__ref-text">
+        <div class="facts__ref-text wow fadeInRight" data-wow-delay="0.3s">
           <p>Использование данных по обмену веществ основаны на практике и результатах серии исследований, проведенных учеными <br><strong>Стэнфордского университета (США):</strong><br> начиная от проекта<br>
           <strong>«A to Z WeightLossStudy» (2007г),</strong> до текущей версии исследования <br><strong>«OneDietDoesNotFitAll: WeightLossStudy» (2015г).</strong></p>
-          <a href="#" class="button button-yellow">Подробнее</a>
+          <a href="#types" class="button button-yellow">Подробнее</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="types">
+  <section class="types" id="types">
     <div class="wrapper">
       <h2>почему соко</h2>
       <h3>6 научно обоснованных способов коррекции веса</h3>
-      <div class="types__list">
+      <div class="types__container">
+      <div class="types__list wow rotateInUpRight">
         <table>
           <thead>
             <tr>
@@ -97,6 +106,7 @@
           </tbody>
         </table>
       </div>
+      </div>
       <a href="#" class="button button--pink">Заказать</a>
     </div>
   </section>
@@ -104,25 +114,25 @@
     <div class="wrapper">
       <h2>Как это работает</h2>
       <div class="how__steps">
-        <div class="how__steps-item">
+        <div class="how__steps-item rotateInDownRight wow" data-wow-delay="0.2s">
           <div class="how__steps-item-img">
             <img src="img/steps1.png" alt="">
           </div>
           <span>1. Заказ теста</span>
         </div>
-        <div class="how__steps-item">
+        <div class="how__steps-item rotateInDownRight wow" data-wow-delay="0.4s">
           <div class="how__steps-item-img">
             <img src="img/steps2.png" alt="">
           </div>
           <span>2. Приезд курьера для забора материала</span>
         </div>
-        <div class="how__steps-item">
+        <div class="how__steps-item rotateInDownRight wow" data-wow-delay="0.6s">
           <div class="how__steps-item-img">
             <img src="img/steps3.png" alt="">
           </div>
           <span>3. Лабораторные исследования</span>
         </div>
-        <div class="how__steps-item">
+        <div class="how__steps-item rotateInDownRight wow" data-wow-delay="0.8s">
           <div class="how__steps-item-img">
             <img src="img/steps4.png" alt="">
           </div>
@@ -131,17 +141,17 @@
       </div>
       <div class="how__report">
         <img src="img/" alt="">
-        <a href="#" class="button button-yellow">Пример отчета</a>
+        <a href="#" class="button button-yellow" target="_blank">Пример отчета</a>
       </div>
       <p>Научно-исследовательские работы проводятся в лаборатории Ульяновского Государственного Университета, лицензия Федеральной службы по надзору в сфере здравоохранения № ФС- 73-01-000624 от 28 января 2014 г. по осуществлению медицинской деятельности.</p>
     </div>
   </section>
   <section class="conclusion">
     <div class="wrapper">
-      <div class="conclusion__img">
+      <div class="conclusion__img wow fadeInRight">
         <img src="img/conclusion.png" alt="">
       </div>
-      <div class="conclusion__text">
+      <div class="conclusion__text wow fadeInRight" data-wow-delay="0.3s">
         <p>Расшифруем 8 генов, отвечающих за физические нагрузки и питание, расскажем обо всем доступным языком, подготовим программу на неделю - основу вашего индивидуального образа жизни СОКО:</p>
         <p>+ новый революционный шейкер Vottler, произведенный в России.</p>
         <p>+ 2 консультации по электронной почте нутрицеолога, гастроэнтеролога с вопросами по предложенной программе.</p>
@@ -151,7 +161,7 @@
           <a href="#" class="button button--red">Купить</a>
         </div>
         <div class="conclusion__bottom-price">
-          <span>3690 р.</span>
+          <img src="img/conclusion2.png" alt="">
         </div>
       </div>
     </div>
@@ -162,9 +172,13 @@
         <span>Copyright Нутриген 2016</span>
       </div>
       <div class="footer__developer">
-        <a href="http://ixpert.pro" target="_blank">Разработано iXpert</a>
+        <a href="http://www.ixpert.pro" target="_blank">Разработано iXpert</a>
       </div>
     </div>
   </footer>
+  <iframe id="video" style="display:none;"  src="https://www.youtube.com/embed/-a6ArYgGzAE" frameborder="0" allowfullscreen></iframe>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>

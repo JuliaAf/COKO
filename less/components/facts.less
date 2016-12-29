@@ -6,9 +6,33 @@
   text-transform: uppercase;
 
   background-color: #ea969f;
-  & .wrapper > p {
+  &__title {
+    position: relative;
+
     margin-bottom: 50px;
-    padding: 0 15%;
+    padding: 0 18%;
+  }
+  &__title-lines {
+    position: absolute;
+    top: -20px;
+  }
+  &__title-lines--left {
+    top: 40px;
+    left: -55px;
+  }
+  &__title-lines--left  img:last-child {
+    position: absolute;
+    top: auto;
+    bottom: 108px;
+    left: 150px;
+  }
+  &__title-lines--right {
+    right: 0;
+  }
+  &__title-lines--right  img:last-child {
+    position: absolute;
+    right: 120px;
+    bottom: 60px;
   }
   & p {
     font-size: 24px;
@@ -34,6 +58,7 @@
 }
 @media @md {
   .facts {
+    overflow: hidden;
     & p {
       font-size: 20px;
       line-height: 32px;
@@ -43,9 +68,13 @@
 @media @sm {
   .facts {
     padding: 60px 0;
-  }
-  & p {
-    font-size: 18px;
+
+    & p {
+      font-size: 18px;
+    }
+    &__title-lines {
+      opacity: 0.2;
+    }
   }
 }
 @media @xs {
@@ -56,6 +85,9 @@
     }
     &__ref {
       flex-direction: column;
+    }
+    &__title-lines {
+      display: none;
     }
   }
 }

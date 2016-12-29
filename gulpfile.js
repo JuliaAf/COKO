@@ -51,19 +51,19 @@ gulp.task("build", ["compress"], function(){
   var imgs = gulp.src("img/**/*.{png,jpg,gif,svg,ico}")
   .pipe(gulp.dest("build/img"));
 
+  var docs = gulp.src("docs/**/*.pdf")
+  .pipe(gulp.dest("build/docs"));
+
   var fonts = gulp.src("fonts/**/*.{woff,woff2,otf,ttf}")
   .pipe(gulp.dest("build/fonts"));
 
   var jss = gulp.src("js/**/*.js")
   .pipe(gulp.dest("build/js"));
 
-  var phps = gulp.src("php/**/*.php")
-  .pipe(gulp.dest("build/php"));
-
   var csss = gulp.src("css/**/*.css")
   .pipe(gulp.dest("build/css"));
 
-  return merge(htmls, imgs, jss, fonts, phps, csss);
+  return merge(htmls, imgs, jss, fonts, csss, docs);
 })
 
 

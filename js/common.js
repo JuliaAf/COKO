@@ -9,14 +9,20 @@ $(document).ready(function(){
   });
 
   if($(window).width() > 768){
-    $("body").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr("href"),
-            top = $(id).offset().top -50;
-        $("body,html").animate({scrollTop: top}, 500);
-        return false;
-    })
-  };
+    $("body").on("click","a", function (e) {
+        if($(this).hasClass("prevented")){
+            e.preventDefault();
+          var id  = $(this).attr("href"),
+              top = $(id).offset().top -50;
+          $("body,html").animate({scrollTop: top}, 500);
+          return false;
+        }
+        else{
+          return true;
+        }
+      });
+    };
+
 
   $(function (){
     $(".scrollTop").click(function (e){
@@ -40,11 +46,11 @@ $(document).ready(function(){
    wow.init();
 
    $(".modal").fancybox({
-    width:600,
-    height:350,
     autoScale:true,
     centerOnScroll:true,
     autoDimensions:true,
-    type:'iframe'
+    showCloseButton:true,
+    enableEscapeButton:true,
+    type:'inline'
   });
 })//ready-end

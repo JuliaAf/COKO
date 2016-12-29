@@ -21,6 +21,8 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
+    text-align: center;
   }
   &--sticky {
     position: fixed;
@@ -70,6 +72,9 @@
 @media @lg {
   .header {
     padding-top: 0;
+    &--sticky {
+      padding-top: 40px;
+    }
     & .wrapper {
       padding: 0 15px;
 

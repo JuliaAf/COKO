@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>COKO</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -13,16 +13,16 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__logo">
-        <a href="#" class="scrollTop"><img src="img/logo.png" alt=""></a>
+        <a href="#" class="scrollTop prevented"><img src="img/logo.png" alt=""></a>
       </div>
       <ul class="header__nav">
-        <li><a href="#">Исследования</a></li>
-        <li><a href="#">Почему СОКО</a></li>
-        <li><a href="#">Как это работает</a></li>
-        <li><a href="#">Купить</a></li>
+        <li><a href="#facts" class="prevented">Исследования</a></li>
+        <li><a href="#types" class="prevented">Почему СОКО</a></li>
+        <li><a href="#how" class="prevented">Как это работает</a></li>
+        <li><a href="#conclusion" class="prevented">Купить</a></li>
       </ul>
       <div class="header__contacts">
-        <a href="tel:+71234567895">8 800 123 45 67</a>
+        <a href="tel:+78422711735">8 (8422) 71-17-35</a>
         <a href="mailto:help@soko.su">help@soko.su</a>
       </div>
     </div>
@@ -41,14 +41,24 @@
         </div>
         <div class="intro__compare-buttons wow fadeInLeft" data-wow-delay="0.3s">
           <a href="#video" rel="nofollow" class="button button--purple modal">Видео</a>
-          <a href="#facts" class="button button--green">Подробнее</a>
+          <a href="#facts" class="button button--green prevented">Подробнее</a>
         </div>
       </div>
     </div>
   </section>
   <section class="facts" id="facts">
     <div class="wrapper">
-      <p>исследования стенфордского университета показали, что люди могут по-разному реагировать на одни и те же продукты и нагрузки в зависимости от генетических особенностей</p>
+      <div class="facts__title">
+        <div class="facts__title-lines facts__title-lines--left">
+          <img src="img/linesbig1.png" alt="" class="wow fadeInLeftBig">
+          <img src="img/linesmall1.png" alt="" class="wow fadeInLeftBig" data-wow-delay="0.3s">
+        </div>
+        <p>исследования стенфордского университета показали, что люди могут по-разному реагировать на одни и те же продукты и нагрузки в зависимости от генетических особенностей</p>
+        <div class="facts__title-lines facts__title-lines--right">
+          <img src="img/linesbig2.png" alt="" class="wow fadeInRightBig">
+          <img src="img/linesmall1.png" alt="" class="wow fadeInRightBig" data-wow-delay="0.3s">
+        </div>
+      </div>
       <div class="facts__ref">
         <div class="facts__ref-img wow fadeInRight">
           <img src="img/facts.png" alt="">
@@ -56,7 +66,7 @@
         <div class="facts__ref-text wow fadeInRight" data-wow-delay="0.3s">
           <p>Использование данных по обмену веществ основаны на практике и результатах серии исследований, проведенных учеными <br><strong>Стэнфордского университета (США):</strong><br> начиная от проекта<br>
           <strong>«A to Z WeightLossStudy» (2007г),</strong> до текущей версии исследования <br><strong>«OneDietDoesNotFitAll: WeightLossStudy» (2015г).</strong></p>
-          <a href="#types" class="button button-yellow">Подробнее</a>
+          <a href="#types" class="button button-yellow prevented">Подробнее</a>
         </div>
       </div>
     </div>
@@ -110,7 +120,7 @@
       <a href="#" class="button button--pink">Заказать</a>
     </div>
   </section>
-  <section class="how">
+  <section class="how" id="how">
     <div class="wrapper">
       <h2>Как это работает</h2>
       <div class="how__steps">
@@ -140,13 +150,15 @@
         </div>
       </div>
       <div class="how__report">
-        <img src="img/" alt="">
-        <a href="#" class="button button-yellow" target="_blank">Пример отчета</a>
+        <a href="docs/doc.pdf" target="_blank" class="download">
+          <img src="img/docimg.png" alt="" download>
+        </a>
+        <a href="docs/doc.pdf" class="button button-yellow download" target="_blank">Пример отчета</a>
       </div>
       <p>Научно-исследовательские работы проводятся в лаборатории Ульяновского Государственного Университета, лицензия Федеральной службы по надзору в сфере здравоохранения № ФС- 73-01-000624 от 28 января 2014 г. по осуществлению медицинской деятельности.</p>
     </div>
   </section>
-  <section class="conclusion">
+  <section class="conclusion" id="conclusion">
     <div class="wrapper">
       <div class="conclusion__img wow fadeInRight">
         <img src="img/conclusion.png" alt="">
@@ -176,7 +188,7 @@
       </div>
     </div>
   </footer>
-  <iframe id="video" style="display:none;"  src="https://www.youtube.com/embed/-a6ArYgGzAE" frameborder="0" allowfullscreen></iframe>
+  <iframe id="video" frameborder="0" src="https://boomstarter.ru/projects/560951/soko_dostupnaya_dieta_po_dnk/widget/video.html"></iframe>
   <script src="js/jquery.fancybox.pack.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/common.js"></script>

@@ -1,0 +1,80 @@
+.conclusion-top {
+  padding-top: 80px;
+  & h1 {
+    flex-basis: 100%;
+
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  & p {
+    margin-bottom: 30px;
+
+    line-height: 30px;
+  }
+  & .conclusion__img .price {
+    position: relative;
+
+    display: inline-block;
+    width: auto;
+    padding: 10px 30px;
+
+    font-size: 54px;
+    color: #364347;
+
+    background: #fad46b;
+  }
+  & .conclusion__img .price::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: 10px;
+
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    background: url(../img/purpleline.png);
+  }
+  & .conclusion__text p:last-child {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  & .conclusion__bottom {
+    justify-content: flex-end;
+  }
+  & .conclusion__buy {
+    width: 50%;
+  }
+
+  & .conclusion__bottom-btn {
+    flex-basis: initial;
+
+    text-align: left;
+  }
+  & .conclusion__oferta {
+    line-height: 15px;
+    color: #fad46b;
+  }
+  & .conclusion__oferta a {
+    color: #ea969f;
+  }
+}
+@media (max-width: 790px) {
+  .conclusion-top {
+    .conclusion__buy {
+      flex-basis: initial !important;
+
+      text-align: left;
+    }
+  }
+}
+@media @sm {
+  &.conclusion-top {
+    & .conclusion__img .price {
+      font-size: 30px;
+    }
+  }
+}

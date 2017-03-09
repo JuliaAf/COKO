@@ -1,5 +1,6 @@
 .conclusion {
   padding: 120px 0 55px 0;
+  overflow: hidden;
 
   background-color: #987dca;
   & .wrapper {
@@ -31,6 +32,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__buy {
+    width: 50%;
+  }
   &__bottom-price {
     position: relative;
 
@@ -44,6 +48,11 @@
     flex-basis: 28%;
 
     text-align: center;
+  }
+
+  &__oferta a {
+    color: #ffe195;
+    text-decoration: underline;
   }
 }
 @media @md {
@@ -64,6 +73,14 @@
     }
     &__bottom-price {
       position: relative;
+
+      order: 2;
+    }
+    &__buy {
+      flex-basis: 100% !important;
+      order: 3;
+
+      text-align: center;
     }
   }
 }

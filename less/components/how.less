@@ -1,10 +1,16 @@
 .how {
   padding: 120px 0 35px 0;
+  overflow: hidden;
 
   text-align: center;
 
-  background-color: #61d193;
+  background-color: #ff868f;
+  &__lisence {
+    text-decoration: underline;
+  }
   & .wrapper > p {
+    margin: 0;
+
     color: #ffffff;
   }
   & h2 {
@@ -36,7 +42,7 @@
 
     background-color: #a88cd5;
     border-radius: 50%;
-    box-shadow: 0 0 0 7px #fad46b;
+    box-shadow: 0 0 0 7px #a88cd5;
 
     transition: 0.3s;
   }
@@ -52,26 +58,79 @@
   &__steps-item:nth-child(4) &__steps-item-img img {
     left: -9px;
   }
-  &__steps-item span {
-    display: block;
+  &__steps-item p {
+    display: table;
+    width: 100%;
 
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
-    color: #ffe6ab;
+    color: #ffffff;
+  }
+  &__steps-item-count {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+
+    font-weight: 400;
+    vertical-align: middle;
+    text-align: center;
+    color: #b17ebf;
+
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  &__steps-item span {
+    display: table-cell;
+
+    vertical-align: middle;
   }
   &__steps-item:hover > &__steps-item-img {
-    box-shadow: 0 0 0 14px #fad46b;
+    box-shadow: 0 0 0 14px #a88cd5;
   }
   &__report {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 90px;
   }
   &__report .button {
     width: auto;
     margin-left: 50px;
-    padding: 14px 40px 12px;
+    padding: 11px 55px 8px;
+  }
+  &__where {
+    margin-bottom: 65px;
+  }
+  &__where-title {
+    display: inline-block;
+    width: 50%;
+
+    font-size: 36px;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+  &__where-places {
+    display: inline-block;
+    width: 50%;
+
+    vertical-align: middle;
+  }
+  &__where-places a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 20px;
+
+    vertical-align: middle;
+  }
+  &__where-places a:nth-child(2) {
+    padding-top: 20px;
+  }
+  &__where-places a  img {
+    max-width: 100%;
   }
 }
 @media @lg {
@@ -110,6 +169,15 @@
 
       text-align: center;
     }
+    .how__steps-item:last-child {
+      margin-bottom: 0;
+    }
+    &__steps-item-count {
+      margin-right: 5px;
+    }
+    &__steps-item span {
+      display: inline;
+    }
     &__steps-item-img {
       width: 260px;
       height: 260px;
@@ -130,16 +198,27 @@
     &__steps-item:nth-child(4) &__steps-item-img img {
       left: 0;
     }
+    &__where-title {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &__where-places {
+      width: 100%;
+    }
   }
 }
 @media @sm {
   .how {
     padding: 60px 0;
+    &__steps {
+      margin-bottom: 35px;
+    }
     &__steps-item {
       flex-basis: 100%;
     }
     &__report {
       flex-wrap: wrap;
+      margin-bottom: 45px;
 
       text-align: center;
     }
@@ -148,8 +227,11 @@
       margin-bottom: 30px;
     }
     &__report .button {
-      flex-basis: 60%;
-      margin: 0;
+      flex-basis: 40%;
+      margin: 20px;
+    }
+    &__where-title {
+      font-size: 22px;
     }
   }
 }

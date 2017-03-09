@@ -1,0 +1,153 @@
+.order {
+  padding: 70px 0 100px 0;
+
+  color: #ffffff;
+
+  background: #967bc6;
+  &__form {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 50px;
+
+    vertical-align: bottom;
+  }
+  & h2 {
+    padding-left: 40%;
+  }
+  &__form-row {
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__form-row:last-child {
+    margin-bottom: 0;
+  }
+
+  &__form label {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40%;
+    padding-top: 4px;
+    padding-right: 10px;
+
+    font-size: 20px;
+    vertical-align: top;
+  }
+  &__form-row::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: -16px;
+
+    width: 0;
+    height: 0;
+
+    border: 15px solid transparent;
+    border-top: 15px solid #967bc6;
+    transform: rotate(226deg);
+  }
+  &__form-row::after {
+    content: "*";
+    position: absolute;
+    top: -4px;
+    right: 1px;
+
+    color: #ffffff;
+  }
+  &__form input,
+  &__form textarea {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60%;
+    padding: 10px;
+
+    font-size: 14px;
+    vertical-align: top;
+
+    border: 0;
+    border-radius: 5px;
+  }
+  &__form textarea {
+    height: 120px;
+  }
+  &__form-bottom span {
+    display: block;
+    float: left;
+    width: 60%;
+  }
+  &__form-bottom div {
+    display: block;
+    float: right;
+    width: 40%;
+    margin: 0;
+
+    text-align: right;
+  }
+  &__form-bottom p {
+    float: left;
+    margin-bottom: -50px;
+
+    font-size: 16px;
+    color: #ff868f;
+  }
+  &__form-bottom p a {
+    text-decoration: underline;
+  }
+  &__right {
+    display: inline-block;
+    width: 50%;
+
+    vertical-align: bottom;
+    text-align: right;
+  }
+  &__right * {
+    display: block;
+  }
+  &__right a {
+    float: right;
+    margin-top: 20px;
+    margin-right: 165px;
+  }
+  &__right img {
+    max-width: 100%;
+  }
+}
+@media @md {
+  .order {
+    & h2 {
+      font-size: 52px;
+    }
+  }
+}
+@media @sm {
+  .order {
+    padding: 35px 0 20px 0;
+    & h2 {
+      font-size: 42px;
+    }
+    &__form {
+      width: 100%;
+      padding-right: 0;
+    }
+    &__form label {
+      font-size: 16px;
+    }
+    &__right {
+      width: 100%;
+
+      text-align: center;
+    }
+    &__right a {
+      display: inline-block;
+      float: none;
+      margin-right: 0;
+    }
+    &__form-bottom p {
+      margin-bottom: 20px;
+
+      font-size: 13px;
+    }
+  }
+}

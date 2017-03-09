@@ -1,89 +1,142 @@
 .intro {
-  padding: 20px 0 60px 0;
+  margin-top: -70px;
+  padding: 200px 0 60px 0;
+  overflow: hidden;
 
-  background-color: #fad46b;
-  &__compare-girls,
-  &__compare-boys {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__compare-girls img,
-  &__compare-boys img {
-    max-width: 100%;
-  }
-  &__compare-girls h2,
-  &__compare-boys-img {
-    flex-basis: 40%;
-  }
-  &__compare-girls-img,
-  &__compare-buttons {
-    flex-basis: 50%;
-  }
-  &__compare-boys {
-    align-items: flex-end;
-    padding-bottom: 55px;
-  }
-  &__compare-girls h2 {
-    line-height: 46px;
-  }
-  &__compare-buttons {
-    padding-bottom: 100px;
+  font-size: 24px;
+  color: #ffffff;
 
-    text-align: center;
-    & .button--purple {
-      margin-right: 50px;
+  background: url(../img/1bg.jpg);
+  background-position: center;
+  background-size: cover;
+  & .wrapper {
+    position: relative;
+  }
+  &__text-head {
+    width: 60%;
+  }
+  & h1 {
+    width: 70%;
+  }
+  & h1 b {
+    font-family: "RotondaWebBold", sans-serif;
+  }
+  &__text-bottom {
+    width: 60%;
+  }
+  &__text-bottom span {
+    font-size: 30px;
+    color: #ff868f;
+  }
+  &__buy {
+    position: absolute;
+    right: 15px;
+    bottom: -30px;
+
+    text-align: right;
+  }
+  &__buy .button {
+    width: auto;
+    margin-bottom: 15px;
+    padding: 11px 55px 8px;
+
+    font-size: 18px;
+    font-family: "RotondaWebBold", sans-serif;
+  }
+  &__buy p {
+    margin: 0;
+
+    font-size: 16px;
+    color: #ff868f;
+  }
+  &__buy p a {
+    text-decoration: underline;
+  }
+}
+@media @lg {
+  .intro {
+    padding-top: 130px;
+
+    font-size: 22px;
+    & h1 {
+      font-size: 70px;
+    }
+    &__text-bottom {
+      width: 55%;
+    }
+    &__buy img {
+      width: 210px;
     }
   }
 }
 @media @md {
   .intro {
-    &__compare-girls h2 {
-      line-height: 34px;
+    & h1 {
+      font-size: 58px;
     }
-    &__compare-buttons {
-      & .button--purple {
-        margin-right: 15px;
-      }
-      & .button {
-        width: 110px;
-      }
+    &__buy {
+      width: 40%;
+    }
+    &__buy img {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+
+      width: 200px;
     }
   }
 }
 @media @sm {
   .intro {
-    padding: 30px 0;
-
-    &__compare-girls h2 {
-      line-height: 28px;
+    font-size: 18px;
+    & h1 {
+      font-size: 50px;
     }
-    &__compare-buttons {
-      width: 100%;
-      padding-bottom: 0;
-      & .button {
-        width: 130px;
-      }
-    }
-    &__compare-boys-img {
-      margin-bottom: 50px;
+    &__buy img {
+      bottom: 120px;
     }
   }
 }
 @media @xs {
   .intro {
-    &__compare-girls,
-    &__compare-boys {
-      flex-direction: column;
+    & h1 {
+      width: 100%;
+
+      font-size: 40px;
+    }
+    &__text-bottom span {
+      font-size: 25px;
+    }
+    &__buy img {
+      width: 140px;
+    }
+  }
+}
+@media (max-width:500px) {
+  .intro {
+    &__text-head {
+      width: 100%;
+    }
+
+    &__text-bottom {
+      width: 100%;
+    }
+
+    &__buy {
+      position: static;
+
+      width: 100%;
 
       text-align: center;
     }
-    &__compare-girls-img {
-      order: 1;
-    }
-    &__compare-girls h2 {
-      order: 2;
+    &__buy img {
+      position: static;
+
+      display: block;
+      margin-bottom: 10px;
+      margin-left: 50%;
+
+      transform: translateX(-50%) rotate(13.5deg);
     }
   }
 }

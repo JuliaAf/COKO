@@ -1,8 +1,12 @@
 .header {
-  padding-top: 20px;
+  position: relative;
+  z-index: 10;
 
-  background-color: #fad46b;
+  width: 100%;
+  padding-top: 15px;
 
+  transition: all 0.3s;
+  transition: 0.5s ease;
   & .wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -26,18 +30,17 @@
   }
   &--sticky {
     position: fixed;
-    top: -40px;
+    top: 0;
+    right: 0;
     left: 0;
-    z-index: 100;
+    z-index: 8000;
 
     width: 100%;
-    padding-top: 40px;
-
-    background-color: transparent;
-    // border-bottom: 1px solid #e7e7e7;
+    margin: 0 auto;
+    margin-top: -15px;
+    padding-top: 20px;
 
     transition: padding-top 0.3s;
-    transition: 0.5s all;
   }
   &__nav li {
     flex-basis: 25%;
@@ -66,14 +69,14 @@
     font-size: 18px;
   }
   & a:hover {
-    color: #f9d46a;
+    color: #ff868f;
   }
 }
 @media @lg {
   .header {
     padding-top: 0;
     &--sticky {
-      padding-top: 40px;
+      padding-top: 15px;
     }
     & .wrapper {
       padding: 0 15px;

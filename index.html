@@ -3,121 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <title>COKO</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+  (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42239594 = new Ya.Metrika({ id:42239594, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/42239594" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!--Google counter-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90677010-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- /Google Counter-->
   <header class="header">
     <div class="wrapper">
       <div class="header__logo">
         <a href="#" class="scrollTop prevented"><img src="img/logo.png" alt=""></a>
       </div>
       <ul class="header__nav">
-        <li><a href="#facts" class="prevented">Исследования</a></li>
-        <li><a href="#types" class="prevented">Почему СОКО</a></li>
         <li><a href="#how" class="prevented">Как это работает</a></li>
-        <li><a href="#conclusion" class="prevented">Купить</a></li>
+        <li><a href="#instr" class="modal">Инструкция</a></li>
+        <li><a href="#order" class="prevented">Купить</a></li>
       </ul>
       <div class="header__contacts">
-        <a href="tel:+78422711735">8 (8422) 71-17-35</a>
-        <a href="mailto:help@soko.su">help@soko.su</a>
+        <a href="tel:+78007009891">8&nbsp;800&nbsp;700&nbsp;98&nbsp;91</a>
+        <a href="mailto:info@coko.su">info@coko.su</a>
       </div>
     </div>
   </header>
   <section class="intro">
     <div class="wrapper">
-      <div class="intro__compare-girls">
-        <h2 class="wow fadeInRight" data-wow-delay="0.3s">Почему одни и те же диеты и образ жизни дают результат одним и не приносят результат другим?</h2>
-        <div class="intro__compare-girls-img wow fadeInRight">
-          <img src="img/intro-girls.png" alt="">
-        </div>
+      <p class="intro__text-head">
+        Эффективность похудения на 60% зависит от генетической предрасположенности человека
+      </p>
+      <h1><b>Пройди ДНК тест</b> и узнай, как нужно <b>питаться, чтобы</b> терять вес</h1>
+      <div class="intro__text-bottom">
+        <span>Питание и спорт по ДНК</span>
+        <p>Увеличь эффективность от физических тренировок в 2-3 раза!<br>Это идеальное решение для оптимизации диеты  и физических тренировок, направленных на предотвращение или избавление от избыточного веса.</p>
       </div>
-      <div class="intro__compare-boys">
-        <div class="intro__compare-boys-img wow fadeInLeft">
-          <img src="img/intro-boys.png" alt="">
-        </div>
-        <div class="intro__compare-buttons wow fadeInLeft" data-wow-delay="0.3s">
-          <a href="#video" rel="nofollow" class="button button--purple modal">Видео</a>
-          <a href="#facts" class="button button--green prevented">Подробнее</a>
-        </div>
+      <div class="intro__buy">
+        <img src="img/price.png" alt="">
+        <a href="#order" class="button button--red prevented">Купить</a>
+          <p>нажимая кнопку "Купить", вы соглашаетесь с условиями с <a href="docs/oferta.pdf" target="_blank">оферты</a></p>
       </div>
     </div>
   </section>
-  <section class="facts" id="facts">
+  <section class="info">
     <div class="wrapper">
-      <div class="facts__title">
-        <div class="facts__title-lines facts__title-lines--left">
-          <img src="img/linesbig1.png" alt="" class="wow fadeInLeftBig">
-          <img src="img/linesmall1.png" alt="" class="wow fadeInLeftBig" data-wow-delay="0.3s">
-        </div>
-        <p>исследования стенфордского университета показали, что люди могут по-разному реагировать на одни и те же продукты и нагрузки в зависимости от генетических особенностей</p>
-        <div class="facts__title-lines facts__title-lines--right">
-          <img src="img/linesbig2.png" alt="" class="wow fadeInRightBig">
-          <img src="img/linesmall1.png" alt="" class="wow fadeInRightBig" data-wow-delay="0.3s">
+    <div class="info__know">
+        <h2>Что вы узнаете</h2>
+        <ul>
+          <li class="info__item">
+            <div class="info__item-count">1</div>
+            <p>Что нужно есть, чтобы ежедневно терять лишние килограммы
+            </p>
+          </li>
+          <li class="info__item">
+            <div class="info__item-count">2</div>
+            <p>Как нужно тренироваться, чтобы улучшить спортивные результаты
+            </p>
+          </li>
+          <li class="info__item">
+            <div class="info__item-count">3</div>
+            <p>Потребность в макро- и микроэлементах отвечающих за метаболизм, способность терять и набирать вес
+            </p>
+          </li>
+          <li class="info__item">
+            <div class="info__item-count">4</div>
+            <p>Индивидуальную переносимость кофеина, лактозы, алкоголя и их влияние на изменение массы тела
+            </p>
+          </li>
+        </ul>
+      </div><!--
+   --><div class="intro__buy">
+        <img src="img/price.png" alt="">
+        <a href="#order" class="button button--red prevented">Купить</a>
+          <p>нажимая кнопку "Купить", вы соглашаетесь с условиями с <a href="docs/oferta.pdf" target="_blank">оферты</a></p>
+      </div>
+      <!-- <div class="clearfix"></div> -->
+      <div class="info__get">
+        <h2>Что вы получите</h2>
+        <ul>
+          <li class="info__item">
+            <div class="info__item-count">1</div>
+            <p>Персонализированный план питания и физических тренировок на каждый день
+            </p>
+          </li>
+          <li class="info__item">
+            <div class="info__item-count">2</div>
+            <p>2 бесплатные консультации нутрициолога по e-mail
+            </p>
+          </li>
+          <li class="info__item">
+            <div class="info__item-count">3</div>
+            <p>Фирменный шейкер Vottler и измерительную ленту
+            в подарок
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="info__steps">
+        <ul>
+          <li>
+            <img src="img/icon1.png" alt="">
+            <p>
+              Cдать тест легко и быстро, достаточно образца ДНК из полости рта
+            </p>
+          </li><!--
+       --><li>
+            <img src="img/icon2.png" alt="">
+            <p>
+              Курьер привезёт и отвезёт ваш ДНК-тест
+            </p>
+          </li><!--
+       --><li>
+            <img src="img/icon3.png" alt="">
+            <p>
+              Вы получите отчёт по электронной почте в течение 15 рабочих дней
+            </p>
+          </li>
+        </ul>
+        <div class="info__steps-end">
+          Заказать тест: <a class="info__steps-end-phone" href="tel:+78007009891">8&nbsp;800&nbsp;700&nbsp;98&nbsp;91</a> &nbsp;|&nbsp;  <a href="mailto:info@coko.su">info@coko.su</a>
+
         </div>
       </div>
-      <div class="facts__ref">
-        <div class="facts__ref-img wow fadeInRight">
-          <img src="img/facts.png" alt="">
-        </div>
-        <div class="facts__ref-text wow fadeInRight" data-wow-delay="0.3s">
-          <p>Использование данных по обмену веществ основаны на практике и результатах серии исследований, проведенных учеными <br><strong>Стэнфордского университета (США):</strong><br> начиная от проекта<br>
-          <strong>«A to Z WeightLossStudy» (2007г),</strong> до текущей версии исследования <br><strong>«OneDietDoesNotFitAll: WeightLossStudy» (2015г).</strong></p>
-          <a href="#types" class="button button-yellow prevented">Подробнее</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="types" id="types">
-    <div class="wrapper">
-      <h2>почему соко</h2>
-      <h3>6 научно обоснованных способов коррекции веса</h3>
-      <div class="types__container">
-      <div class="types__list wow rotateInUpRight">
-        <table>
-          <thead>
-            <tr>
-              <td>ГРЕЙЗИНГ</td>
-              <td>Низкокалорийное питание</td>
-              <td>Маложирная<br> диета</td>
-              <td>Модель тарелки</td>
-              <td>Диета по гликемическому индексу</td>
-              <td>Нутригенетика</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Частые перекусы, каждые 2 часа</td>
-              <td>Снижение калорий в пище</td>
-              <td>Аналог низкокалорийной, но отличается отсутствием жиров</td>
-              <td>Разделение тарелки на области с белковыми и углеводными продуктами</td>
-              <td>Питание по содержаниюсахара в продуктах</td>
-              <td>Генетический метод снижения веса основанный на кодировании ферментов ДНК</td>
-            </tr>
-            <tr>
-              <td>Калорийность рациона снижается на 15%, что стимулирует потерю избыточного веса</td>
-              <td>Успех достигается в 50% случаев</td>
-              <td>Снижение сердечно-сосудистых заболеваний</td>
-              <td>Способность оказать помощь в похудении</td>
-              <td>ГЛИ позволяет подобрать питание в зависимости от усваивания организмом сахара</td>
-              <td>Подбор питания в зависимости от воздействия собственных ферментов на пищу</td>
-            </tr>
-            <tr>
-              <td>Притупление чувства голода приводит к заболеваниям желудочно-кишечного тракта</td>
-              <td>Низкожировые и углеводные диеты ведут к нарушению выработки синтеза ферментов</td>
-              <td>Диета провоцирует развитие атеросклероза и болезней сердечно-сосудистой системы</td>
-              <td>Отсутствует индивидуальный подбор диеты по макро-нутриентам</td>
-              <td>Лишняя глюкоза трансформируется в жир, что приводит к набору веса</td>
-              <td>Постоянные исследования и появление новых генов, влияющих на усвояемость пищи</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
-      <a href="#" class="button button--pink">Заказать</a>
+      <div class="clearfix"></div>
     </div>
   </section>
   <section class="how" id="how">
@@ -128,63 +151,117 @@
           <div class="how__steps-item-img">
             <img src="img/steps1.png" alt="">
           </div>
-          <span>1. Заказ теста</span>
+          <p>
+            <b class="how__steps-item-count">1</b>
+            <span>Заказ теста</span>
+          </p>
         </div>
         <div class="how__steps-item rotateInDownRight wow" data-wow-delay="0.4s">
           <div class="how__steps-item-img">
             <img src="img/steps2.png" alt="">
           </div>
-          <span>2. Приезд курьера для забора материала</span>
+          <p>
+            <b class="how__steps-item-count">2</b>
+            <span>Приезд курьера для забора материала</span>
+          </p>
         </div>
         <div class="how__steps-item rotateInDownRight wow" data-wow-delay="0.6s">
           <div class="how__steps-item-img">
             <img src="img/steps3.png" alt="">
           </div>
-          <span>3. Лабораторные исследования</span>
+          <p>
+            <b class="how__steps-item-count">3</b>
+            <span>Лабораторные исследования</span>
+          </p>
         </div>
         <div class="how__steps-item rotateInDownRight wow" data-wow-delay="0.8s">
           <div class="how__steps-item-img">
             <img src="img/steps4.png" alt="">
           </div>
-          <span>4. Результаты</span>
+          <p>
+            <b class="how__steps-item-count">4</b>
+            <span>Результаты</span>
+          </p>
         </div>
       </div>
       <div class="how__report">
-        <a href="docs/doc.pdf" target="_blank" class="download">
-          <img src="img/docimg.png" alt="" download>
-        </a>
-        <a href="docs/doc.pdf" class="button button-yellow download" target="_blank">Пример отчета</a>
+        <a href="#video" rel="nofollow" class="button button--purple modal">Видео</a>
+        <a href="docs/doc.pdf" class="button button--purple download" target="_blank">Пример&nbsp;отчета</a>
       </div>
-      <p>Научно-исследовательские работы проводятся в лаборатории Ульяновского Государственного Университета, лицензия Федеральной службы по надзору в сфере здравоохранения № ФС- 73-01-000624 от 28 января 2014 г. по осуществлению медицинской деятельности.</p>
+      <div class="how__where">
+        <div class="how__where-title">Пройти тест можно здесь:</div><!--
+     --><div class="how__where-places">
+          <a href="http://cube-fitness.ru/" target="_blank">
+            <img src="img/cube-logo.png" alt="">
+          </a><!--
+       --><a href="http://fitness-forma.ru/" target="_blank">
+            <img src="img/forma-logo.png" alt="">
+          </a>
+        </div>
+      </div>
+      <p>Научно-исследовательские работы проводятся в лаборатории Ульяновского Государственного Университета, лицензия Федеральной службы по надзору в сфере здравоохранения № ФС-73-01-000664 от 26 августа 2016 г. по осуществлению медицинской деятельности. <a href="" class="how__lisence" target="_blank">Лицензия</a></p>
     </div>
   </section>
-  <section class="conclusion" id="conclusion">
+  <section class="order" id="order">
     <div class="wrapper">
-      <div class="conclusion__img wow fadeInRight">
-        <img src="img/conclusion.png" alt="">
+      <div class="order__form">
+        <h2>Заказ</h2>
+        <form action="" method="post">
+          <div class="order__form-row">
+            <label for="">ФИО</label><!--
+            --><input type="text" placeholder="Иванов Иван Иванович">
+          </div>
+          <div class="order__form-row">
+            <label for="">Адрес доставки</label><!--
+            --><input type="text" placeholder="Индекс, город, улица, дом, квартира">
+          </div>
+          <div class="order__form-row">
+            <label for="">Номер телефона</label><!--
+            --><input type="text" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="order__form-row">
+            <label for="">e-mail</label><!--
+            --><input type="text" placeholder="example@mail.ru">
+          </div>
+          <div class="order__form-row">
+            <label for="">Комментарий к заказу</label><!--
+            --><textarea placeholder="Текст комментария"></textarea>
+          </div>
+          <div class="order__form-bottom">
+            <span>* - поле обязательно для заполнения</span>
+            <div><a href="#order" rel="nofollow" class="button button--red prevented">купить</a></div>
+              <p>нажимая кнопку "Купить", вы соглашаетесь с условиями с <a href="docs/oferta.pdf" target="_blank">оферты</a></p>
+          </div>
+        </form>
+      </div><!--
+   --><div class="order__right">
+        <img src="img/conclusion2.png" alt="">
+        <a href="#instr" rel="nofollow" class="button button--red modal">Инструкция</a>
+
       </div>
-      <div class="conclusion__text wow fadeInRight" data-wow-delay="0.3s">
-        <p>Расшифруем 8 генов, отвечающих за физические нагрузки и питание, расскажем обо всем доступным языком, подготовим программу на неделю - основу вашего индивидуального образа жизни СОКО:</p>
-        <p>+ новый революционный шейкер Vottler, произведенный в России.</p>
-        <p>+ 2 консультации по электронной почте нутрицеолога, гастроэнтеролога с вопросами по предложенной программе.</p>
-      </div>
-      <div class="conclusion__bottom">
-        <div class="conclusion__bottom-btn">
-          <a href="#" class="button button--red">Купить</a>
-        </div>
-        <div class="conclusion__bottom-price">
-          <img src="img/conclusion2.png" alt="">
-        </div>
-      </div>
+      <!-- <p>нажимая кнопку "Купить", вы соглашаетесь с условиями с <a href="docs/oferta.pdf" target="_blank">оферты</a></p> -->
+
     </div>
+  </section>
+  <section id="instr" class="instr">
+    <div class="wrapper">
+    <img src="img/instr.jpg" alt=""></div>
   </section>
   <footer class="footer">
     <div class="wrapper">
+      <div class="footer__info">
+        <p><b>18 +</b></p>
+        <span>Имеются противопоказания. Перед использованием услуги проконсультируйтесь со специалистом.</span>
+      </div>
       <div class="footer__copyright">
         <span>Copyright Нутриген 2016</span>
       </div>
+      <div class="footer__llc">
+        Общество с ограниченной ответственностью "Нутриген"<br>
+        город Ульяновск, 44-й проезд Инженерный, дом 9
+      </div>
       <div class="footer__developer">
-        <a href="http://www.ixpert.pro" target="_blank">Разработано iXpert</a>
+        <a href="http://www.ixpert.pro" target="_blank"><span>Разработано в</span> <img src="img/logoixpert.png" alt=""></a>
       </div>
     </div>
   </footer>
